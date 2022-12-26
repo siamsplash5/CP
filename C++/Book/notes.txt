@@ -1,0 +1,69 @@
+1. First 3 digit of a number
+
+example 2^32 = 4294967296, we need first 3 digit, 429
+=> log10(4294967296) = 9.632959861
+=> remove the integer part, (9.632959861 become 0.632959861)
+=> 10^0.632959861 = 4.294967296
+=> from this number we can find any number of first digits.
+
+2. Number of digits in a number = floor(log10(number)+1)
+ => Positive value means number of digit in the integer number
+ => Negative value means number of 0 after decimal points.
+
+১. 1+2+3+4+……+ n হলে এরূপ ধারার সমষ্টি = [n(n+1)/2]
+
+২. ১ম n পদের বর্গের সমষ্টি = {n(n+1)(2n+1)}/6
+
+12+22 + 32+……+ n2= {n(n+1)(2n+1)}/6
+
+৩. ১ম n পদের ঘনের সমষ্টি = n2/4(n+1)2
+
+1^3 + 2^3 + 3^3+……+n^3= n^2/4(n+1)^2
+
+৪. পদ সংখ্যা = [(শেষ পদ – প্রথম পদ)/ সাধারণ অন্তর] + ১
+
+Number of terms= (Last Term – first Term/ Difference)+1
+
+৫. সমষ্টি/ যোঘফল = [(১ম পদ + শেষ পদ)  x পদসংখ্যা] / 2
+
+Sum= [(First Term+ Last term) * Number of Terms] / 2
+
+৬. n তম পদ = a + (n-1)d ‌
+
+এখানে, n = পদসংখ্যা, a = ১ম পদ, d = সাধারণ অন্তর
+
+৭. গড়= (প্রথম পদ + শেষ পদ) / ২
+
+৮. সমান্তর ধারার সমষ্টির সূত্র ( n সংখ্যক পদের সমষ্টি) = n/2[2a+(n-1)d]
+
+৯. প্রথম n সংখ্যক বিজোড় সংখ্যার সমষ্টি = n^2
+
+১০. প্রথম n সংখ্যক জোড় সংখ্যার সমষ্টি = n(n+1)
+
+১১. বৃহত্তম সংখ্যা = (সমষ্টি + অন্তর) / ২
+
+১২. ক্ষুদ্রতম সংখ্যা = ( সমষ্টি – অন্তর) / ২
+
+১৩. ধারার n তম পদ = a+(n – 1) .d
+
+যেখানে,
+
+d = সাধারণ অন্তর
+
+n = পদসংখ্যা
+
+a = প্রথম পদ
+
+ ১৪. সমানুপাত ধারার ক্ষেত্রে:
+
+ধারার n তম পদ= ax^n – 1
+
+১৫. n সংখ্যক পদের সমষ্টি = S (r^n – 1 / r -1)
+
+১৬. গুণোত্তর ধারার r তম পদ : ধারার প্রথম পদ a, সাধারণ অনুপাত q,
+
+সুতরাং r তম পদ = aq^(r-1)
+
+১৭. গুণোত্তর ধারার সমষ্টির সূত্র( n সখ্যক পদের সমষ্টি), S = a(1-q^n)/(1-q)
+
+book: https://drive.google.com/file/d/1R7lE-iLq0cpeeXc-Mt_X1dsrSQsLPv-f/view?usp=sharing
