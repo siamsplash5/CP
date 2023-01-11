@@ -1,7 +1,17 @@
-// pattern count
+/*
 
-lld prefix_function(string pattern, lld presize) {
-    //pattern = actual pattern + # + text
+KMP function will return the number of pattern found in
+the text string.
+
+for function call, use: KMP(modified_string, pattern_length);
+where modified string = pattern+"#"+text;
+& pattern_length = pattern.size();
+
+for printing the position: pos = i-pattern_lenght+1;
+
+*/
+
+lld KMP(string pattern, lld plen) {
     lld n = pattern.size();
     lld pre[n + 2] = {0};
     lld i = 0, j = 1;
@@ -17,12 +27,7 @@ lld prefix_function(string pattern, lld presize) {
     }
     lld counter = 0;
     for (int i = 0; i < n; i++) {
-        counter += (presize == pre[i]);
+        counter += (plen == pre[i]);
     }
     return counter;
 }
-/*
-
-for printing the position: pos = i-actualpatternsize+1;
-
-*/
