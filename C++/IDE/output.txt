@@ -1,2 +1,0 @@
-Case 1: black wins
-Case 2: white wins
