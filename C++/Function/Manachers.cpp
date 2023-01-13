@@ -1,4 +1,5 @@
-//longest palindrome substring length in O(N)
+//returns the length longest palindrome substring length in O(N)
+
 void manachar(string s) {
     string str;
     str += '#';
@@ -7,6 +8,7 @@ void manachar(string s) {
         str += '#';
     }
     str += '#';
+    lld dp[str.size()] = {0};
     lld center = 0, R = 0, mirror, mx = 0;
     for (int i = 1; i < str.size() - 1; i++) {
         mirror = 2 * center - i;
