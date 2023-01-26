@@ -1,16 +1,11 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-#include <functional>
-using namespace __gnu_pbds;
+#include<functional>
 using namespace std;
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
 typedef long long int lld;
 #define dbug cout <<"dukse" <<endl;
 #define test int tt; cin >>tt; while(tt--)
 
 int main() {
-    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
     return 0;
 }

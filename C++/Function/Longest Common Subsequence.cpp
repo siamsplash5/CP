@@ -38,3 +38,34 @@ void all_lcs(int i, int j, string s) {
         all_lcs(i, j - 1, s);
     }
 }
+
+//recursive lcs
+
+string s1, s2, ans;
+int dp[3003][3003];
+
+int lcs(int n, int m) {
+    if (n < 0 or m < 0)return 0;
+    if (dp[n][m])return dp[n][m];
+    if (s1[n - 1] == s2[m - 1]) return dp[n][m] = lcs(n - 1, m - 1) + 1;
+    else return dp[n][m] = max(lcs(n, m - 1), lcs(n - 1, m));
+}
+
+int main() {
+    cin >> s1 >> s2;
+    int n = s1.size(), m = s2.size();
+    lcs(n, m);
+    string ans = "";
+    while (n > 0 and m > 0) {
+        if (s1[n - 1] == s2[m - 1]) {
+            ans += s1[n - 1];
+            n--;
+            m--;
+        }
+        else if (dp[n - 1][m] > dp[n][m - 1])n--;
+        else m--;
+    }
+    reverse(ans.begin(), ans.end());
+    cout << ans << endl;
+    return 0;
+}
